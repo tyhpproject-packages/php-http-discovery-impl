@@ -1,0 +1,55 @@
+{
+    "name": "tyhpdef/php-http-discovery-impl",
+    "description": "Implementation package for tyhpdef/php-http-discovery. Require tyhpdef/php-http-discovery, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "1.20.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/psr-http-message": "@dev",
+                "tyhpdef/psr-http-factory": "@dev",
+                "tyhpdef/psr-http-client": "@dev",
+                "tyhpdef/php-http-httplug": "@dev",
+                "tyhpdef/php-http-message": "@dev",
+                "tyhpdef/php-http-promise": "@dev",
+                "tyhpdef/php-http-message-factory": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/php-http-discovery"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "php-http/discovery": "1.20.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/psr-http-message": "@dev",
+        "tyhpdef/psr-http-factory": "@dev",
+        "tyhpdef/psr-http-client": "@dev",
+        "tyhpdef/php-http-httplug": "@dev",
+        "tyhpdef/php-http-message": "@dev",
+        "tyhpdef/php-http-promise": "@dev",
+        "tyhpdef/php-http-message-factory": "@dev"
+    }
+}
